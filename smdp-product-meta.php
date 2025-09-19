@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Plugin Name: SMDP: Sourcing Meta Data for Product
+ * Plugin Name: SMDP: Product Meta
  * Plugin URI: https://github.com/NesarAhmedRazon/simple-sourcig-data
- * Description: A plugin for Sourcing Meta Data for Products.
+ * Description: A plugin to add custom Meta Data for Wc Product.
  * Version: 0.0.1
  * Author: Nesar Ahmed
  * Author URI: https://nesarahmed.dev/
  * License: GPLv2 or later
- * Text Domain: smdp-sourcing-meta-data
+ * Text Domain: smdp-product-meta
  * Domain Path: /languages/
  */
 
@@ -20,7 +20,7 @@ if (!defined('ABSPATH')) {
 
 
 if (!defined('SMDP_SOURCING_META_DATA_DOMAIN')) {
-    define('SMDP_SOURCING_META_DATA_DOMAIN', 'smdp-sourcing-meta-data');
+    define('SMDP_SOURCING_META_DATA_DOMAIN', 'smdp-product-meta');
 }
 
 if (!defined('SMDP_SOURCING_META_DATA_DIR')) {
@@ -38,5 +38,5 @@ if (!defined('SMDP_SOURCING_META_DATA_FILE')) {
 add_action('woocommerce_init', 'smdpsmd_wooReady');
 function smdpsmd_wooReady()
 {
-    require_once SMDP_SOURCING_META_DATA_DIR . 'core.php';
+    require_once SMDP_SOURCING_META_DATA_DIR . 'sourcing-data.php';
 }
