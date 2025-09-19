@@ -19,8 +19,8 @@ if (!defined('ABSPATH')) {
 }
 
 
-if (!defined('SMDP_PRODUCT_META_DOMAIN')) {
-    define('SMDP_PRODUCT_META_DOMAIN', 'smdp-product-meta');
+if (!defined('SMDP_TEXTDOMAIN')) {
+    define('SMDP_TEXTDOMAIN', 'smd-picker-extension');
 }
 
 if (!defined('SMDP_PRODUCT_META_DIR')) {
