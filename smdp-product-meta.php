@@ -19,24 +19,24 @@ if (!defined('ABSPATH')) {
 }
 
 
-if (!defined('SMDP_SOURCING_META_DATA_DOMAIN')) {
-    define('SMDP_SOURCING_META_DATA_DOMAIN', 'smdp-product-meta');
+if (!defined('SMDP_PRODUCT_META_DOMAIN')) {
+    define('SMDP_PRODUCT_META_DOMAIN', 'smdp-product-meta');
 }
 
-if (!defined('SMDP_SOURCING_META_DATA_DIR')) {
-    define('SMDP_SOURCING_META_DATA_DIR', plugin_dir_path(__FILE__));
+if (!defined('SMDP_PRODUCT_META_DIR')) {
+    define('SMDP_PRODUCT_META_DIR', plugin_dir_path(__FILE__));
 }
 
-if (!defined('SMDP_SOURCING_META_DATA_URL')) {
-    define('SMDP_SOURCING_META_DATA_URL', plugin_dir_url(__FILE__));
+if (!defined('SMDP_PRODUCT_META_URL')) {
+    define('SMDP_PRODUCT_META_URL', plugin_dir_url(__FILE__));
 }
 
-if (!defined('SMDP_SOURCING_META_DATA_FILE')) {
-    define('SMDP_SOURCING_META_DATA_FILE', __FILE__);
+if (!defined('SMDP_PRODUCT_META_FILE')) {
+    define('SMDP_PRODUCT_META_FILE', __FILE__);
 }
 
 add_action('woocommerce_init', 'smdpsmd_wooReady');
 function smdpsmd_wooReady()
 {
-    require_once SMDP_SOURCING_META_DATA_DIR . 'sourcing-data.php';
+    require_once SMDP_PRODUCT_META_DIR . 'sourcing-data.php';
 }
