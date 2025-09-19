@@ -35,6 +35,9 @@ if (!defined('SMDP_PRODUCT_META_FILE')) {
     define('SMDP_PRODUCT_META_FILE', __FILE__);
 }
 
+
+require_once SMDP_PRODUCT_META_DIR . 'logger.php';
+
 add_action('woocommerce_init', 'smdpsmd_wooReady');
 function smdpsmd_wooReady()
 {
