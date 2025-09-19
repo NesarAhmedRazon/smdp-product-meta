@@ -39,4 +39,5 @@ add_action('woocommerce_init', 'smdpsmd_wooReady');
 function smdpsmd_wooReady()
 {
     require_once SMDP_PRODUCT_META_DIR . 'sourcing-data.php';
+    require_once SMDP_PRODUCT_META_DIR . 'product-moq.php';
 }
