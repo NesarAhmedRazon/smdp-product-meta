@@ -43,4 +43,5 @@ function smdpsmd_wooReady()
 {
     require_once SMDP_PRODUCT_META_DIR . 'sourcing-data.php';
     require_once SMDP_PRODUCT_META_DIR . 'product-moq.php';
+    require_once SMDP_PRODUCT_META_DIR . 'inc/woodMartCardLabel.php';
 }
