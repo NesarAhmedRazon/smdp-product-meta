@@ -1,0 +1,72 @@
+.smdp_moq_field {
+background-color: #cddbc9;
+}
+
+.smdpicker_meta_wrapper {
+padding-left: 1em;
+display: flex;
+justify-content: start;
+background-color: #fffbeb;
+}
+.smdpicker_meta_title {
+min-width: 130px;
+font-weight: 500;
+}
+.smdpicker_meta_fields {
+width: 50%;
+display: block;
+padding: 5px 9px;
+margin: 9px 0;
+}
+.smdpicker_meta_field {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 0.5em;
+margin-bottom: 1em;
+position: relative;
+}
+.smdpicker_meta_field_input {
+background: #000;
+}
+.smdpicker_meta_field_input[type=checkbox] + label {
+float: unset !important;
+margin-left: 5px !important;
+}
+.smdpicker_documents {
+background-color: #fbf9fa;
+}
+.smdpicker_documents_title {
+min-width: 130px;
+}
+.smdpicker_documents_fields {
+width: 50%;
+display: block;
+padding: 5px 9px;
+margin: 9px 0;
+}
+.smdpicker_documents_field {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 0.5em;
+margin-bottom: 1em;
+position: relative;
+}
+.smdpicker_documents_field_container {
+display: grid;
+grid-template-columns: 1fr 2fr;
+gap: 1em;
+}
+.smdpicker_documents_field_container > .input_field, .smdpicker_documents_field_container > input[type=text] {
+width: auto !important;
+}
+.smdpicker_documents_field .remove-document {
+display: flex;
+position: relative;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+color: red;
+font-size: 1.5em;
+}

@@ -1,0 +1,89 @@
+.smdp {
+  &_moq_field {
+    background-color: #cddbc9;
+  }
+}
+.smdpicker {
+  &_meta {
+    &_wrapper {
+      padding-left: 1em;
+      display: flex;
+      justify-content: start;
+      background-color: #fffbeb;
+    }
+
+    &_title {
+      min-width: 130px;
+      font-weight: 500;
+    }
+
+    &_fields {
+      width: 50%;
+      display: block;
+      padding: 5px 9px;
+      margin: 9px 0;
+    }
+
+    &_field {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5em;
+      margin-bottom: 1em;
+      position: relative;
+      &_input {
+        background: #000;
+
+        &[type="checkbox"] + label {
+          float: unset !important;
+          margin-left: 5px !important;
+        }
+      }
+    }
+  }
+
+  &_documents {
+    background-color: #fbf9fa;
+
+    &_title {
+      min-width: 130px;
+    }
+
+    &_fields {
+      width: 50%;
+      display: block;
+      padding: 5px 9px;
+      margin: 9px 0;
+    }
+
+    &_field {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5em;
+      margin-bottom: 1em;
+      position: relative;
+
+      &_container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1em;
+
+        & > .input_field,
+        & > input[type="text"] {
+          width: auto !important;
+        }
+      }
+
+      & .remove-document {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: red;
+        font-size: 1.5em;
+      }
+    }
+  }
+}

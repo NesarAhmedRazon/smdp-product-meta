@@ -19,8 +19,8 @@ if (!defined('ABSPATH')) {
 }
 
 
-if (!defined('SMDP_TEXTDOMAIN')) {
-    define('SMDP_TEXTDOMAIN', 'smd-picker-extension');
+if (!defined('SMDP_PM_TEXTDOMAIN')) {
+    define('SMDP_PM_TEXTDOMAIN', 'smdp-product-meta');
 }
 
 if (!defined('SMDP_PRODUCT_META_DIR')) {
@@ -42,6 +42,8 @@ add_action('woocommerce_init', 'smdpsmd_wooReady');
 function smdpsmd_wooReady()
 {
     require_once SMDP_PRODUCT_META_DIR . 'sourcing-data.php';
-    require_once SMDP_PRODUCT_META_DIR . 'product-moq.php';
     require_once SMDP_PRODUCT_META_DIR . 'inc/woodMartCardLabel.php';
+    require_once SMDP_PRODUCT_META_DIR . 'inc/woodMartBodyTabs.php';
+    require_once SMDP_PRODUCT_META_DIR . 'inc/product-base_price.php';
+    require_once SMDP_PRODUCT_META_DIR . 'product-moq.php';
 }
